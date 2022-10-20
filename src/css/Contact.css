@@ -1,0 +1,72 @@
+.contact-info {
+    display: flex;
+    margin-left: 15%;
+    margin-top: 3.5rem;
+}
+.contact-info>.contact-item {
+    width: 28%;
+}
+
+.contact-info>.contact-item>.contact-name {
+    font-size: 21px;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+.purple {
+    color: purple;
+}
+.contact-form{
+    margin-top: 5rem;
+    margin-left: 12.5%;  
+}
+.contact-form form {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.contact-form form input {
+    width: 48%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.contact-mess {
+    text-align: none;
+    max-width: 75%;
+    margin-top: 5rem;
+    border: none;
+    border-bottom: 2px solid gray;
+    min-width: 75%;
+}
+.contact-mess:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+}
+.contact-button {
+    margin-top: 4rem;
+    margin-left: 80%;
+    border: 2px solid purple;
+    padding: 1rem;
+    color: purple;
+    width: 100px;
+}
+.service {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.service>.service-header {
+    font-size: 32px;
+    margin-top: 13rem;
+    font-family: "Open Sans",sans-serif;
+    letter-spacing: 7px;
+}
+
+.service>.service-hr {
+    border-bottom: 2px solid purple;
+    text-align: center;
+    width: 5%;
+    margin-left: 47.5%;
+    margin-top: 2rem;
+}

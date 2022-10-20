@@ -1,0 +1,23 @@
+.welcome {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+.welcome>.welcome-header {
+    margin-top: 13rem;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 2.5rem;
+    font-family: "Open Sans",sans-serif;
+}
+.welcome>.welcome-intro {
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.welcome>.welcome-content {
+    line-height: 30px;
+    color: rgb(216, 216, 216);
+    margin-bottom: 13rem;
+}

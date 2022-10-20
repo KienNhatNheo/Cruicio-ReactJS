@@ -1,0 +1,25 @@
+.num-summery {
+    width: 100%;
+    height: 20rem;
+    background-color: #9933FF;
+    text-align: center;
+    color: white;
+    display: flex;
+    padding-left: 15%;
+    padding-top: 7%;
+}
+
+.num-summery>.num-item {
+    width: 20%;
+    font-size: 30px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 4rem;
+}
+
+.number {
+    letter-spacing: 0.6rem;
+}
+
+.role {
+    letter-spacing: 0.2rem;
+}

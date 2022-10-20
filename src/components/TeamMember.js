@@ -1,0 +1,47 @@
+import React from "react";
+import "../css/TeamMember.css";
+
+const member = [{
+    name: 'SAMANTA L.',
+    role: 'Architeck'
+},{
+    name: 'PAMELA K.',
+    role: 'Designer'
+},{
+    name: 'MICHEAL J.',
+    role: 'Planner'
+}
+]
+
+const icon = ['bxl:facebook-square','akar-icons:twitter-fill','akar-icons:instagram-fill','akar-icons:linkedin-box-fill']
+
+export default function TeamMember(){
+    return (
+        <>
+            <div className="service">
+                <div className="service-header">OUR TEAM</div>
+                <div className="service-hr"></div>
+                <div className="member">
+                    {member.map((mem,index)=>(
+                        <>
+                            <div className="out">
+                            <div className={"member-prof" + index}>
+                            <div className="ps1">
+                                <div className="mem-name">{mem.name}</div>
+                                <div className="mem-role">{mem.role}</div>
+                                <ul>
+                                    {icon.map((item,index)=>(
+                                        <li><iconify-icon icon={item}></iconify-icon></li>
+                                    ))}
+                                </ul>
+                            </div>
+                            </div>
+                            </div>
+                        </>
+                    )
+                    )}
+                </div>
+		    </div>
+        </>
+    );   
+}

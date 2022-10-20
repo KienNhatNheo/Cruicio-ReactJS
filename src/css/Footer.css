@@ -1,0 +1,48 @@
+.footer{
+    background-color: rgb(1, 1, 1);
+    height: 15rem;
+    margin-top: 20rem;
+    padding:0 10rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.footer div{
+    padding-bottom: 2rem;
+}
+
+.footer>.logo-task{
+    text-align: center;
+}
+
+.footer>.logo-task ul{
+    display: flex;
+    color: white;
+    list-style: none;
+    justify-content: center;
+}
+
+.footer>.logo-task li{
+    padding-left: 3rem;
+}
+
+.footer>.logo-task ul li a{
+    color: white;
+}
+
+.footer>.logo-task ul li a iconify-icon{
+    font-size: 1.8rem;
+}
+
+.footer>.logo-task ul li a:hover{
+    color: purple;
+    transition: 1s ease;
+}
+.footer-end {
+    text-align: center;
+    background-color: purple;
+    color: white;
+    padding: 0.7rem;
+    letter-spacing: 0.1rem;
+    font-size: 13px;
+}

@@ -1,0 +1,31 @@
+.moreover {
+    display: flex;
+    color: white;
+}
+
+.moreover>.m-item {
+   width: 33.33%;
+}
+
+.moreover>.m-item>.item-header {
+   margin-top: 5rem;
+   margin-left: 4.5rem;
+   font-size: 30px;
+}
+
+.moreover>.m-item>.item-content {
+   margin: 1.5rem 5rem 4.5rem 4.5rem;
+   text-align: justify;
+}
+
+.color-1 {
+   background-color: #9900FF;
+}
+
+.color-2 {
+   background-color: #CC00FF;
+}
+
+.color-3 {
+   background-color: #990099;
+}
