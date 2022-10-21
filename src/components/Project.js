@@ -30,7 +30,7 @@ const project = [{
 export default function Project(){
     return (
         <>
-            <div className="service">
+            <div id="portfolio" className="service">
 			    <div className="service-header">OUR PORTFOLIO</div>
 			    <div className="service-hr"></div>
 			    <div className="task-bar">

@@ -1,0 +1,10 @@
+.arrow{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: solid purple;
+    border-width: 0 5px 5px 0;
+    margin-left: 48%;
+    transform: rotate(225deg);
+    background-color: transparent !important;
+}

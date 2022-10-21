@@ -14,7 +14,7 @@ export default function Footer(){
                 <div class="logo-task">
                     <ul>
                         {icon.map((icon,index)=>(
-                            <li><a href="#"><iconify-icon icon={icon}></iconify-icon></a></li>
+                            <li key={index}><a href="#"><iconify-icon icon={icon}></iconify-icon></a></li>
                         ))}
                     </ul>
                 </div>

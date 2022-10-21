@@ -18,7 +18,7 @@ const icon = ['bxl:facebook-square','akar-icons:twitter-fill','akar-icons:instag
 export default function TeamMember(){
     return (
         <>
-            <div className="service">
+            <div id="team" className="service">
                 <div className="service-header">OUR TEAM</div>
                 <div className="service-hr"></div>
                 <div className="member">

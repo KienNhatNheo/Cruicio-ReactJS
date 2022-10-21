@@ -6,7 +6,7 @@ import "../css/Contact.css";
 export default function Contact(){
     return (
         <>
-            <div className="service">
+            <div id="contact" className="service">
 			<div className="service-header">CONTACT</div>
 			<div className="service-hr"></div>
 			<div className="contact-info">

@@ -16,9 +16,9 @@ export default function JobAttributed(){
             <div className="moreover">
                 {attributed.map((item,index)=> (
                         <>
-                            <div className= {"m-item color-"+ ++index }>
-                                <div className="item-header">{item.title}</div>
-                                <div className="item-content">{item.content}</div>
+                            <div key={index} className= {"m-item color-"+ ++index }>
+                                <div key={index+1} className="item-header">{item.title}</div>
+                                <div key={index+2} className="item-content">{item.content}</div>
                             </div>
                         </>))
                 }

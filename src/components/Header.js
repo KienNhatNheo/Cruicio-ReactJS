@@ -15,7 +15,7 @@ export default function Header(){
                 <ul className="navbar-nav">
                    {content.map((item,index) => 
                      (<li className="nav-item" key={index}>
-                    <a className="nav-link" href="#">{item}</a>
+                    <a className="nav-link" href={'#' + item.toLowerCase()}>{item}</a>
                 </li>)
                    )}
                 </ul>
