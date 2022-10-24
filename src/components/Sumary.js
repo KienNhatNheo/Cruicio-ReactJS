@@ -1,67 +1,81 @@
 import React, { useEffect, useState } from "react";
 import "../css/Sumary.css";
 
-const sumary = [{
-	num: 150,
-	role: 'Clients'
-},{
-	num: 620,
-	role: 'Projects'
-},{
-	num: 25,
-	role: 'Awards'
-},{
-	num: 940,
-	role: 'Coffee'
-}]
+
 
 export default function Sumary(){
-	// const [sumary,setData] = useState();
-	// const incre = (pre,dist) =>{
-	// 	pre = pre+dist
-	// }
-	// useEffect(() => {
-    //     // const [positonY, setPositonY] = useState(0);
-    //     // let step = 0;
-    //     if (scrollY > 3000) {
-    //         let interval = setInterval(() => {
-    //             setstep(++step);
-    //             if (step < 100)
-    //                 setData([{
-	// 					num: incre(num,20),
-	// 					role: 'Clients'
-	// 				},{
-	// 					num: incre(num,50),
-	// 					role: 'Projects'
-	// 				},{
-	// 					num: incre(num,1),
-	// 					role: 'Awards'
-	// 				},{
-	// 					num: incre(num,),
-	// 					role: 'Coffee'
-	// 				}]);
-    //         }, 100);
-    //     }
-    //     if (step > 100) {
-    //         clearInterval(interval);
-    //     }
+	
+	// const sumary = [{
+	// 	num: 150,
+	// 	role: 'Clients'
+	// },{
+	// 	num: 620,
+	// 	role: 'Projects'
+	// },{
+	// 	num: 25,
+	// 	role: 'Awards'
+	// },{
+	// 	num: 940,
+	// 	role: 'Coffee'
+	// }]
 
+    // const [data, setData] = useState([{
+	// 	num: 0,
+	// 	role: 'Clients'
+	// },{
+	// 	num: 0,
+	// 	role: 'Projects'
+	// },{
+	// 	num: 0,
+	// 	role: 'Awards'
+	// },{
+	// 	num: 0,
+	// 	role: 'Coffee'
+	// }]);
+
+    // const [step, setStep] = useState(0);
+
+    // useEffect(() => {
+    //     setStep(step + 1);
+    //     if (step > 100) setData(sumary);
+    //     setTimeout(() => {
+    //         setData([
+    //             {	
+	// 				num: Math.floor(Math.random() * 900),
+    //                 role: "Clients"
+    //             },
+    //             {
+	// 				num: Math.floor(Math.random() * 100),
+    //                 role: "Projects"
+    //             },
+    //             {
+	// 				num: Math.floor(Math.random() * 900),
+    //                 role: "Awards"   
+    //             },
+    //             {
+	// 				num: Math.floor(Math.random() * 900),
+    //                 role: "Coffee"
+    //             },
+    //         ]);
+    //     }, 20);
     //     return () => {
     //         <></>;
     //     };
-    // }, [scrollY]);
+    // }, [data]);
 
-    return (
-        <div className="num-summery">
-			{sumary.map((item,index)=>(
-				<div className="num-item">
-				<div className="number">{item.num}</div>
-				<div className="role">{item.role}</div>
-			</div>
-			))}
+    // return (
+    //     <div className="num-summery">
+	// 		{data.map((item,index)=>(
+	// 			<div className="num-item">
+	// 			<div className="number">{item.num}</div>
+	// 			<div className="role">{item.role}</div>
+	// 		</div>
+	// 		))}
 			
-		</div>
-    );   
-
-    
+	// 	</div>
+	return(
+<>
+	</>	
+	)
 }
+ 

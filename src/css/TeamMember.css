@@ -28,20 +28,19 @@
 .member-prof0 {
     overflow: hidden;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/team1.jpg');
-
+    animation: slide 2s ease-in-out forwards;
     
 }
 .member-prof1 {
     overflow: hidden;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/team2.jpg');
-
+    animation: slide-3 2s ease-in-out forwards;
     
 }
 .member-prof2 {
     overflow: hidden;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/team3.jpg');
-
-    
+    animation: slide-4 2s ease-in-out forwards;
 }
 
 .member-prof0:last-child {
@@ -102,4 +101,37 @@
 }
 .ps1>ul>li:hover {
     color: black;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-60%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-3 {
+    0% {
+        opacity: 0;
+        transform: translateY(-60%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-4 {
+    0% {
+        opacity: 0;
+        transform: translateX(60%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }

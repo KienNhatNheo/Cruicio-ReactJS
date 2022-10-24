@@ -13,6 +13,8 @@
     color: white;
     text-align: center;
     padding-top: 125px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-content>h1 {
@@ -20,16 +22,23 @@
     font-size: 100px;
     font-weight: 549;
     letter-spacing: 10px;
+    /* left:500px;
+    position: relative; */
+    animation: slide 2s ease-in-out forwards;
+    
 }
 .main-content>.hr{
     font-size: 35px;
     margin-bottom: 30px;
     color: purple;
+    text-align: center;
 }
 .main-content>.main-content-bottom{
     font-size: 30px;
     margin-bottom: 30px;
     letter-spacing: 18px;
+    /* width: 700px; */
+    animation: slide-2 2s ease-in-out forwards;
 }
 .content-arrow{
     width: 40px;
@@ -40,4 +49,26 @@
     margin-left: 48%;
     transform: rotate(45deg);
     margin-top: 120px;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-60%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-2 {
+    0% {
+        transform: translateX(60%);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }

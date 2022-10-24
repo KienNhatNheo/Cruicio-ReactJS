@@ -14,6 +14,7 @@
     font-size: 40px;
     font-family: "Open Sans",sans-serif;
     letter-spacing: 7px;
+    animation: slide 2s ease-in-out forwards;
 }
 
 .started>.started-button {
@@ -26,10 +27,33 @@
     font-size: 16px;
     border: 3px solid white;
     letter-spacing: 2px;
+    animation: slide-button 2s ease-in-out forwards;
 }
 
 .started>.started-button:hover {
     background-color: white;
     color: #9933FF;
     transition: 1s ease;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-60%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-button {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }

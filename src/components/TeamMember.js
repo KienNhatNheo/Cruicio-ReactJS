@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/TeamMember.css";
+import { useState, useEffect } from "react";
 
 const member = [{
     name: 'SAMANTA L.',
@@ -16,9 +17,23 @@ const member = [{
 const icon = ['bxl:facebook-square','akar-icons:twitter-fill','akar-icons:instagram-fill','akar-icons:linkedin-box-fill']
 
 export default function TeamMember(){
+
+
+    const [gototop, setGototop] = useState(false);
+    useEffect(()=>{
+        const handleScoll = () => {
+            if(window.scrollY >= 1800){
+                setGototop(true)
+            } else {
+                setGototop(false)
+            }
+        }
+        window.addEventListener('scroll',handleScoll)
+    })
     return (
         <>
-            <div id="team" className="service">
+            {gototop && (
+                <div id="team" className="service">
                 <div className="service-header">OUR TEAM</div>
                 <div className="service-hr"></div>
                 <div className="member">
@@ -42,6 +57,11 @@ export default function TeamMember(){
                     )}
                 </div>
 		    </div>
+            )}
         </>
     );   
+      
 }
+
+
+

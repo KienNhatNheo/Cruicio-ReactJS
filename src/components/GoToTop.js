@@ -9,7 +9,6 @@ export default function GoToTop(){
     useEffect(()=>{
         const handleScoll = () => {
             if(window.scrollY >= 300){
-                console.log(window.scrollY)
                 setGototop(true)
             } else {
                 setGototop(false)
