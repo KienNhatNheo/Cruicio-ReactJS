@@ -39,48 +39,56 @@
     overflow: hidden;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work1.jpg');
     background-size: cover;
+    animation: slide 1s ease-in-out forwards;
 }
 .mtr-2 {
     width: 100%;
     overflow: hidden;
     background-size: cover;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work2.jpg');
+    animation: slide-r 1s ease-in-out forwards;
 }
 .mtr-3 {
     width: 100%;
     overflow: hidden;
     background-size: cover;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work3.jpg');
+    animation: slide-u 1s ease-in-out forwards;
 }
 .mtr-4 {
     width: 100%;
     overflow: hidden;
     background-size: cover;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work4.jpg');
+    animation: slide 1s ease-in-out forwards;
 }
 .mtr-5 {
     width: 100%;
     overflow: hidden;
     background-size: cover;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work5.jpg');
+    animation: slide-r 1s ease-in-out forwards;
 }
 .mtr-6 {
     width: 100%;
     overflow: hidden;
     background-size: cover;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work6.jpg');
+    animation: slide-u 1s ease-in-out forwards;
 }
 .mtr-7 {
     width: 100%;
     overflow: hidden;
     background-size: cover;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work7.jpg');
+    animation: slide 1s ease-in-out forwards;
 }
 .mtr-8 {
     width: 100%;
     overflow: hidden;
     background-image: url('https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work8.jpg');
     background-size: cover;
+    animation: slide-r 1s ease-in-out forwards;
 }
 
 
@@ -199,4 +207,45 @@ div.service:last-child {
 .mbutton-bg{
     padding: 3rem ;
     background-color: rgb(216, 216, 216);
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-60%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-u {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes slide-d {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes slide-r {
+    0% {
+        opacity: 0;
+        transform: translateX(60%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }

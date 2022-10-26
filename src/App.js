@@ -18,10 +18,12 @@ import Shareholder from './components/Shareholder';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import GoToTop from './components/GoToTop';
+import Slideshow from './components/slider';
+
 function App() {
   return (
     <>
-      <Header />
+      <Header/>
       <Banner />
       <Welcome />
       <JobAttributed />
@@ -35,17 +37,16 @@ function App() {
       <Project/>
       <Subcribe/>
       <Discuss />
-      <Testimonials/>
+      {/* <Testimonials/> */}
+      <Slideshow/>
       <Shareholder/>
       <Contact/>
       <Footer/>
       <GoToTop />
+      
     </>
     
-  );
- 
+  )  
 }
 
-// ReactDOM.render(<h1>wow</h1>, document.getElementById('test'));
 export default App;
-

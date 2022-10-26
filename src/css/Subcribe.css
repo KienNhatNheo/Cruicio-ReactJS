@@ -34,6 +34,10 @@
 input {
     outline: none;
 }
+
+.block>h2{
+    animation: slide 2s ease-in-out forwards;
+}
 .email {
     width: 50vw;
     height: 80px;
@@ -42,6 +46,7 @@ input {
     margin: 30px 0px;
     padding-bottom: 10px;
     text-align: center;
+    animation: slide 2s ease-in-out forwards;
 }
 
 .up_case {
@@ -59,4 +64,15 @@ input {
     background-color: rgb(158, 45, 245);
     color: white;
     transition: ease 0.5s;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-60%);     
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
